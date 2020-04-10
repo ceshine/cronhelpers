@@ -1,10 +1,16 @@
 from setuptools import setup, find_packages
+from distutils.util import convert_path
+from typing import Any, Dict
 
-from cronhelpers.version import __version__
+# https://stackoverflow.com/a/24517154/4575168
+main_ns: Dict[str, Any] = {}
+ver_path = convert_path('cronhelpers/version.py')
+with open(ver_path) as ver_file:
+    exec(ver_file.read(), main_ns)
 
 setup(
     name="cronhelpers",
-    version=__version__,
+    version=main_ns['__version__'],
     author="Ceshine Lee",
     author_email="ceshine@ceshine.net",
     description="Cron smarter with these small tools.",
