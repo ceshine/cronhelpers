@@ -14,7 +14,9 @@ Example usage:
 from cronhelpers import telegram_wraooer
 
 # This one only sends a message when the cron job failed
-@telegram_wrapper("your_token", "your_chat_id", name="jobName", send_at_start=False, send_on_success=False)
+@telegram_wrapper(
+    "your_token", "your_chat_id", name="jobName",
+    send_at_start=False, send_on_success=False)
 def simple_func(arg):
     return arg
 ```
