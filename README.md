@@ -1,5 +1,7 @@
 # cronhelpers
 
+[![CircleCI](https://circleci.com/gh/ceshine/what-i-did-today-telegram-bot/tree/master.svg?style=svg)](https://circleci.com/gh/ceshine/what-i-did-today-telegram-bot/tree/master)
+
 Cron smarter with these small tools. (WIP)
 
 ## List of Tools
