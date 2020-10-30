@@ -74,7 +74,7 @@ def telegram_wrapper(
                     except:
                         contents.append('Main call returned value: %s' %
                                         "ERROR - Couldn't str the returned value.")
-                    text = '\n'.join(contents)
+                    text = '\n'.join(contents)[:2000]
                     bot.send_message(chat_id=chat_id, text=text)
                 return value
 
